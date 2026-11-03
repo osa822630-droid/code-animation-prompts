@@ -101,6 +101,8 @@ def validate_manifests() -> dict:
     require("<" not in description.group(1) and ">" not in description.group(1),
             "Avoid angle brackets in skill descriptions for web sync compatibility")
     require("references/claude-web.md" in skill_text, "Skill must link the web execution guide")
+    require("references/video-examples.md" in skill_text, "Skill must link the original video examples")
+    require((SOURCE / "references/video-examples.md").is_file(), "Original video example links are missing")
 
     command = PLUGIN / "commands/animate.md"
     require(command.is_file(), "The short animate command is missing")

@@ -11,7 +11,7 @@ description: "使用 341 种风格提示词和参考静帧制作代码动画、H
 
 先确认当前会话实际可用的文件与执行工具。通过 Claude Web marketplace 安装时，技能已经就绪，不要再次下载仓库或运行本地安装脚本。先阅读 [references/claude-web.md](references/claude-web.md)，以实际加载的技能目录解析资源；不要假定 `~/.claude/skills/` 或本地终端存在。
 
-Web 包保留全部提示词、静帧与 HTML 示例，但不重复包含三个大型 MP4 示例视频。没有文件工具或渲染依赖时，明确说明限制，不把文字方案或未执行的命令冒充成片。Claude Code／Codex 的完整本地安装仍包含原始视频。
+Web 包保留全部提示词、静帧与 HTML 示例，但不重复包含三个大型 MP4 示例视频；原始视频的观察／下载链接见 [references/video-examples.md](references/video-examples.md)。没有文件工具或渲染依赖时，明确说明限制，不把文字方案或未执行的命令冒充成片。Claude Code／Codex 的完整本地安装仍包含原始视频。
 
 ## 找到合适的风格
 
@@ -30,7 +30,7 @@ python "<技能目录>/scripts/styles.py" list --series Z
 - 用户只描述气质：给出 2–3 个匹配项，说明色彩、运动和适用内容；用户已要求直接制作时选择最匹配的一项并继续。
 - A–G 是带代码的样片；M 是运动／叙事；K、Z、R 是画风；H 是版式；L、V、X 是第三方风格；O 是电影视觉参考。不要把多个风格的全部约束机械叠加，应确定主画风、运动方式和版式各自的职责。
 - 148 个条目没有静帧；明确说明文字参考，不虚构截图。
-- **B6 只存在于原始示例目录，不在 341 个风格条目中。** 用户点名 B6 时阅读 `assets/library/示例/B6_光速穿梭·爆炸·重聚_同一份提示词/提示词.md`，不要冒充索引中有 B6。
+- **B6 只存在于原始示例目录，不在 341 个风格条目中。** 用户点名 B6 时阅读 `assets/library/示例/B6_光速穿梭·爆炸·重聚_同一份提示词/提示词.md`，不要冒充索引中有 B6。原始示例视频链接见 [references/video-examples.md](references/video-examples.md)。
 
 ## 从提示词到可编辑动画
 

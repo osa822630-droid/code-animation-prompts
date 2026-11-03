@@ -11,7 +11,7 @@ Use the directory containing this loaded `SKILL.md` as the skill root. Its actua
 3. If Python and file tools are available, `scripts/styles.py search`, `show`, and `list` work from any working directory when invoked by absolute path.
 4. Save generated work in the user's working/output directory, not in the installed plugin. Keep the bundled library unchanged.
 
-The web distribution contains every style prompt and still, plus HTML examples and screenshots. It omits the three large MP4 example videos. Do not try to open those missing videos or claim they are bundled. The full repository retains them for local use.
+The web distribution contains every style prompt and still, plus HTML examples and screenshots. It does not duplicate the three large MP4 example videos, but it bundles direct watch/download links to the unchanged originals in [video-examples.md](video-examples.md). Use those links instead of trying to open a missing local MP4 or claiming the video files are bundled. The full repository retains the actual videos for local use.
 
 ## Respect the actual tools available
 

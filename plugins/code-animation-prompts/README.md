@@ -37,9 +37,10 @@ The same marketplace also works in Claude Code:
 - All 193 reference stills and the offline style picker.
 - The searchable JSON catalog and standard-library Python lookup script.
 - Example HTML, prompts, screenshots, attribution, and third-party licenses.
+- Direct watch/download links to the original example videos in [video-examples.md](skills/code-animation-prompts/references/video-examples.md).
 - A deterministic HTML starter and the optional local video-rendering script.
 
-The three large original MP4 example videos are **not duplicated into this web package**. They remain in the [full source library](https://github.com/osa822630-droid/code-animation-prompts/tree/main/skills/code-animation-prompts/assets/library/示例). References to those videos inside the original example notes describe the full collection, not this lightweight distribution.
+The three large original MP4 example videos are **not duplicated into this web package**, and the original files are unchanged. They remain in the [full source library](https://github.com/osa822630-droid/code-animation-prompts/tree/main/skills/code-animation-prompts/assets/library/示例), and the bundled video-examples page links directly to them. References to those videos inside the original example notes describe the full collection, not this lightweight distribution.
 
 ## Runtime expectations
 
