@@ -28,5 +28,6 @@
 
 - **原始素材整理者**：哔哩哔哩 [**俯仰观照**](https://space.bilibili.com/3690990015613855/?spm_id_from=333.788.upinfo.detail.click)，感谢其资源分享；保留原包中的说明与署名。
 - **技能封装与仓库维护**：[XiaoyeCodes](https://github.com/XiaoyeCodes)。
+- **Claude Web marketplace 封装**：[osa822630-droid fork](https://github.com/osa822630-droid/code-animation-prompts)，新增 marketplace／plugin 清单与轻量 Web 发行目录；原始素材和署名保持不变。
 - **README 预览**：基于原包静帧、挑选器及示例视频制作，相关素材权利和来源保持不变。
 - **模型标注**：原始示例文件名中的模型名称沿用原包，仅为来源记录，不代表本仓库另行验证或官方背书。

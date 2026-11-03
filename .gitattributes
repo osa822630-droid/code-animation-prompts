@@ -8,3 +8,4 @@
 *.mp4 binary
 # Preserve the supplied library byte for byte, including its original newlines.
 skills/code-animation-prompts/assets/library/** -text
+plugins/code-animation-prompts/skills/code-animation-prompts/assets/library/** -text

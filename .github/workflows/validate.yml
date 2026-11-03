@@ -1,4 +1,4 @@
-name: Validate library and skill
+name: Validate library, skill, and Claude Web marketplace
 on: [push, pull_request]
 permissions:
   contents: read
@@ -13,6 +13,19 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - run: python -m unittest discover -s tests -v
+      - run: python scripts/build_web_plugin.py --check
       - run: python scripts/validate_repo.py
       - run: python skills/code-animation-prompts/scripts/styles.py search 水墨 --limit 3
       - run: python skills/code-animation-prompts/scripts/styles.py show B3
+      - run: python plugins/code-animation-prompts/skills/code-animation-prompts/scripts/styles.py search 粒子 --limit 3
+      - run: python plugins/code-animation-prompts/skills/code-animation-prompts/scripts/styles.py show Z5
+  claude-plugin-schema:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      # Development-time validation only; end users install from Claude Web.
+      - run: npx --yes @anthropic-ai/claude-code@2.1.317 plugin validate .

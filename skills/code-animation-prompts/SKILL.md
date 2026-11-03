@@ -1,11 +1,17 @@
 ---
 name: code-animation-prompts
-description: 使用 341 种风格提示词和参考静帧制作代码动画、HTML 动效或视频。适用于按风格编号选型、组合视觉风格、把内容转成可编辑动画并渲染成片。
+description: "使用 341 种风格提示词和参考静帧制作代码动画、HTML 动效或视频。Use when choosing a visual style or creating code animations, HTML/SVG/Canvas motion graphics, animated explainers, intros, or video production briefs. استخدمها لاختيار نمط أو صناعة أنيميشن بالكود، مقدمات فيديو، شرح متحرك، أو مشاهد HTML وCanvas وSVG وCSS قابلة للتعديل من مكتبة 341 نمطًا."
 ---
 
 # Code Animation Prompts
 
 将用户的内容转成有明确视觉风格、可编辑、可复现的代码动画。素材库在本技能的 `assets/library/`，包含 341 份提示词、193 张参考静帧、离线挑选器和原始示例。
+
+## 运行环境 / Claude Web
+
+先确认当前会话实际可用的文件与执行工具。通过 Claude Web marketplace 安装时，技能已经就绪，不要再次下载仓库或运行本地安装脚本。先阅读 [references/claude-web.md](references/claude-web.md)，以实际加载的技能目录解析资源；不要假定 `~/.claude/skills/` 或本地终端存在。
+
+Web 包保留全部提示词、静帧与 HTML 示例，但不重复包含三个大型 MP4 示例视频。没有文件工具或渲染依赖时，明确说明限制，不把文字方案或未执行的命令冒充成片。Claude Code／Codex 的完整本地安装仍包含原始视频。
 
 ## 找到合适的风格
 

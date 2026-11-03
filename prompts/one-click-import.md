@@ -1,5 +1,7 @@
 # 一键导入提示词
 
+> **Claude Web:** لا تستخدم طلب التثبيت المحلي بالأسفل. اتبع [دليل Add marketplace](../docs/CLAUDE_WEB.md) وأضف الفورك من واجهة Plugins بدلًا من ذلك.
+
 复制下面整段到有本地文件与终端权限的 Claude Code 或 Codex。
 
 ```text

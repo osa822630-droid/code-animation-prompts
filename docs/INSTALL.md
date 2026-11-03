@@ -1,4 +1,16 @@
-# 安装到 Claude Code / Codex
+# التثبيت على Claude Web / Claude Code / Codex
+
+## Claude Web من غير Claude Code
+
+للإضافة من المتصفح، اتبع [دليل Add marketplace](CLAUDE_WEB.md) واستخدم رابط الفورك:
+
+```text
+https://github.com/osa822630-droid/code-animation-prompts
+```
+
+لا تحتاج أوامر التثبيت التالية في Claude Web؛ أضف الـmarketplace ثم ثبّت **Code Animation Prompts** من واجهة Plugins. طرق Claude Code وCodex الأصلية موضحة أدناه وتحتفظ بالمكتبة الكاملة بما فيها الفيديوهات.
+
+## التثبيت المحلي الأصلي
 
 本仓库针对有本地文件和终端能力的 Claude Code 与 Codex。先下载完整仓库（包含原始视频约 75 MiB，另有 README 图片），安装的是 `skills/code-animation-prompts/` 整个目录。
 

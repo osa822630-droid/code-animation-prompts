@@ -1,0 +1,21 @@
+{
+  "name": "code-animation-prompts",
+  "displayName": "Code Animation Prompts",
+  "version": "1.0.0",
+  "description": "341 code-animation styles and 193 reference stills for choosing a visual direction and building editable HTML, Canvas, SVG, or CSS animations. Optimized for Claude Web without bundling large example videos.",
+  "author": {
+    "name": "XiaoyeCodes",
+    "url": "https://github.com/XiaoyeCodes"
+  },
+  "homepage": "https://github.com/osa822630-droid/code-animation-prompts/blob/main/docs/CLAUDE_WEB.md",
+  "repository": "https://github.com/osa822630-droid/code-animation-prompts",
+  "icon": "assets/icon.png",
+  "keywords": [
+    "animation",
+    "motion-graphics",
+    "html",
+    "canvas",
+    "creative-coding",
+    "claude-web"
+  ]
+}
