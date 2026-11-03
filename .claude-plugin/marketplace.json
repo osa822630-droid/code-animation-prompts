@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "Code animation styles, reference stills, and editable HTML animation workflows for Claude on the web.",
-    "version": "1.0.0"
+    "version": "1.0.1"
   },
   "plugins": [
     {

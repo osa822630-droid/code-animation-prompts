@@ -29,8 +29,9 @@ class BuildWebPluginTests(unittest.TestCase):
         self.addCleanup(self.patch.stop)
         self.write(self.source / "SKILL.md",
                    '---\nname: code-animation-prompts\ndescription: "Create code animations."\n---\n'
-                   'Read [the web guide](references/claude-web.md).\n')
+                   'Read [the web guide](references/claude-web.md) and [video examples](references/video-examples.md).\n')
         self.write(self.source / "references/claude-web.md", "Use installed files.\n")
+        self.write(self.source / "references/video-examples.md", "Links to original videos.\n")
         entries = [{"image": "still.jpg" if i < 193 else ""} for i in range(341)]
         self.write(self.source / "references/catalog.json",
                    json.dumps({"total": 341, "entries": entries}))
@@ -60,7 +61,7 @@ class BuildWebPluginTests(unittest.TestCase):
 
     def test_build_excludes_videos_and_caches_and_preserves_bytes(self):
         result = web.build()
-        self.assertEqual(result["files"], 9)
+        self.assertEqual(result["files"], 10)
         self.assertTrue((self.target / "assets/style.md").is_file())
         self.assertFalse((self.target / "assets/example.mp4").exists())
         self.assertFalse((self.target / "__pycache__").exists())

@@ -1,7 +1,7 @@
 {
   "name": "code-animation-prompts",
   "displayName": "Code Animation Prompts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "341 code-animation styles and 193 reference stills for choosing a visual direction and building editable HTML, Canvas, SVG, or CSS animations. Optimized for Claude Web without bundling large example videos.",
   "author": {
     "name": "XiaoyeCodes",
