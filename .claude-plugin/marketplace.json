@@ -1,0 +1,33 @@
+{
+  "name": "code-animation-prompts",
+  "owner": {
+    "name": "osa822630-droid",
+    "url": "https://github.com/osa822630-droid"
+  },
+  "metadata": {
+    "description": "Code animation styles, reference stills, and editable HTML animation workflows for Claude on the web.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "code-animation-prompts",
+      "description": "Choose from 341 code-animation styles and 193 reference stills, then turn a brief into editable HTML, Canvas, SVG, or CSS animation. Includes a lightweight library for Claude Web; no API key or external service is required.",
+      "source": "./plugins/code-animation-prompts",
+      "strict": true,
+      "author": {
+        "name": "XiaoyeCodes",
+        "url": "https://github.com/XiaoyeCodes"
+      },
+      "homepage": "https://github.com/osa822630-droid/code-animation-prompts/blob/main/docs/CLAUDE_WEB.md",
+      "category": "design",
+      "keywords": [
+        "animation",
+        "motion-graphics",
+        "html",
+        "canvas",
+        "creative-coding",
+        "claude-web"
+      ]
+    }
+  ]
+}

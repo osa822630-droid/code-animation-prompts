@@ -6,16 +6,39 @@
 
 **从一句创意，到一段有风格的代码动画。**
 
-341 种风格提示词 · 193 张参考静帧 · 10 个系列 · Claude Code & Codex Skill
+341 种风格提示词 · 193 张参考静帧 · 10 个系列 · Claude Web · Claude Code · Codex
 
 [![Styles](https://img.shields.io/badge/styles-341-b7f47b?style=flat-square&labelColor=161d28)](docs/STYLES.md)
 [![Stills](https://img.shields.io/badge/reference_stills-193-86b7ff?style=flat-square&labelColor=161d28)](docs/images/style-gallery.png)
+[![Skill](https://img.shields.io/badge/Claude_Web-Add_marketplace-b7f47b?style=flat-square&labelColor=161d28)](docs/CLAUDE_WEB.md)
 [![Skill](https://img.shields.io/badge/Agent_Skill-Claude_Code_%26_Codex-e6ceaa?style=flat-square&labelColor=161d28)](skills/code-animation-prompts/SKILL.md)
 [![Sharing](https://img.shields.io/badge/sharing-free-ecb7cc?style=flat-square&labelColor=161d28)](LICENSE.md)
 
-[浏览全部风格](docs/STYLES.md) · [一键导入](#一键导入claude-code--codex) · [手动安装](docs/INSTALL.md) · [原始示例](skills/code-animation-prompts/assets/library/示例) · [来源与许可](LICENSE.md)
+[Claude Web 安装](docs/CLAUDE_WEB.md) · [浏览全部风格](docs/STYLES.md) · [一键导入](#一键导入claude-code--codex) · [手动安装](docs/INSTALL.md) · [原始示例](skills/code-animation-prompts/assets/library/示例) · [来源与许可](LICENSE.md)
 
 </div>
+
+## التثبيت على Claude Web — Add marketplace
+
+هذا الفورك مجهّز للإضافة مباشرة من واجهة Claude على المتصفح، من غير تثبيت Claude Code:
+
+1. افتح **Customize → Plugins → Add → Add marketplace → Add from a repository**.
+2. الصق رابط الفورك ده:
+
+```text
+https://github.com/osa822630-droid/code-animation-prompts
+```
+
+3. بعد المزامنة، ثبّت **Code Animation Prompts** من الـmarketplace وافتح محادثة جديدة.
+4. جرّب:
+
+```text
+/code-animation-prompts:animate B3، مدخل أنيميشن 12 ثانية عن تحويل الفكرة إلى واقع، مقاس 16:9، جزيئات ذهبية على خلفية داكنة.
+```
+
+حزمة الويب فيها كل الـ341 نمط والـ193 صورة مرجعية، مع استبعاد فيديوهات الأمثلة الكبيرة فقط؛ النسخة الأصلية الكاملة باقية للتثبيت المحلي. لا يحتاج الـplugin إلى مفتاح API أو خدمة خارجية مدفوعة. ظهور خاصية الإضافة وإتاحة تشغيلها يتحكم فيهما Claude حسب الحساب والسياسات الحالية.
+
+**التفاصيل واستكشاف الأخطاء:** [دليل Claude Web بالعربي](docs/CLAUDE_WEB.md).
 
 ## 先看风格
 
@@ -40,7 +63,8 @@
 |---|---|
 | **完整原始素材库** | 阅读 341 份 Markdown 提示词，查看静帧、参考实现与原始示例 |
 | **离线风格挑选器** | 搜索、按类别筛选、放大图片、勾选风格、导出已选清单 |
-| **可安装 Agent Skill** | 让 Claude Code／Codex 按需读取风格，规划镜头并制作代码动画 |
+| **Claude Web Marketplace** | 从网页的 Add marketplace 添加此 fork，再安装轻量插件；保留全部提示词与静帧 |
+| **可安装 Agent Skill** | 让 Claude Web／Claude Code／Codex 按需读取风格，规划镜头并制作代码动画 |
 | **轻量检索脚本** | 按编号、关键词、系列查找；不必把整个素材库塞进上下文 |
 | **浏览器渲染工具** | 将提供时间接口的 HTML 逐帧导出为 MP4，可混入已有音频 |
 | **一键导入提示词** | 复制到有本地文件和终端权限的 Claude Code／Codex，完成下载与安装 |
@@ -195,13 +219,19 @@ python skills/code-animation-prompts/scripts/render_video.py skills/code-animati
 code-animation-prompts/
 ├── README.md
 ├── LICENSE.md                       # 各部分的来源与使用约定
+├── .claude-plugin/marketplace.json   # Claude Web / Claude Code marketplace 入口
+├── plugins/code-animation-prompts/  # 提交的轻量 Web 插件；不含重复 MP4
+│   ├── .claude-plugin/plugin.json
+│   ├── commands/animate.md
+│   └── skills/code-animation-prompts/
 ├── prompts/one-click-import.md       # 复制给 Claude Code / Codex 的导入请求
 ├── docs/
+│   ├── CLAUDE_WEB.md                # 网页 Add marketplace 阿拉伯语指南
 │   ├── INSTALL.md                   # 安装位置、项目安装、更新方式
 │   ├── STYLES.md                    # 341 个可点击条目
 │   ├── images/                      # 封面、风格墙、真实项目截图、动图
 │   └── source-manifest.json         # 原始 555 个文件的 SHA-256 清单
-├── scripts/                         # 安装、索引生成、预览图生成、校验
+├── scripts/                         # 安装、索引、Web 插件同步、预览图、校验
 └── skills/code-animation-prompts/
     ├── SKILL.md                     # 技能入口
     ├── agents/openai.yaml           # Codex 展示信息
